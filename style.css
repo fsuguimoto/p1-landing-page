@@ -1,0 +1,25 @@
+:root {
+    --background-color01: #1F2937;
+    --background-color02: #3882F6;
+    --background-color03: #E5E7EB;
+    --text-color01: #F9FAF8;
+    --text-color02: #F9FAF8;
+    --text-color03: #1F2937;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+i {
+    background-color: var(--background-color01);
+}
+
+img {
+    max-width: 500px;
+}
+
+.container {
+    width: 100%;
+}
