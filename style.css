@@ -6,12 +6,21 @@
     --text-color02: #1F2937;
 }
 
+html {
+    margin: 0;
+    min-height: 100%;
+}
 body {
+    /* Display */
     display: flex;
     flex-direction: column;
+    /* Font properties */
     font-family: Roboto, sans-serif;
+    /* Margin, borders, etc */
+    margin: 0;
 }
 
+/* Headers */
 h1 {
     font-size: 48px;
     font-weight: 900;	
@@ -31,32 +40,68 @@ img {
     max-width: 500px;
     max-height: 350px;
 }
-
+/* Divs and containers styling */
 .container {
     width: 100%;
     height: 500px;
 }
 
 .container.hero {
-    /* Display */
+    /* Display & alignment*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    text-align: justify;
     /* Background & Font-Styling */
     background-color: var(--background-color01);
-    color: var(--text-color01);  
+    color: var(--text-color01);
+    text-align: justify;
     /* Margins, paddings, etc */
     margin: 5px;
     padding: 18px;
     border: 0;
 }
 
+.container.info {
+    /* Display */
+    display: flex;
+    flex-wrap: wrap;
+    /* Background & Font-Styling */
+    background-color: var(--background-color03);
+    color: var(--text-color02);
+}
+
 .quote {
     font-size: 36px;
     font-style: italic;
     color: var(--text-color02);
+}
+
+/* Features, and child elements*/
+.main-title {
+    padding:  8px;
+    margin: 24px;
+}
+.features-main {
+    /* Flex */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+    /* Text */
+    text-align: center;
+}
+.features {
+    /* Columns and margins */
+    width: 15%;
+    margin: 8px;
+    padding: 8px;    
+}
+
+.icon {
+    font-size: 60px;
+    color: var(--text-color02);
+    margin: 6px;
 }
 
