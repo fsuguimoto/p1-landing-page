@@ -3,23 +3,60 @@
     --background-color02: #3882F6;
     --background-color03: #E5E7EB;
     --text-color01: #F9FAF8;
-    --text-color02: #F9FAF8;
-    --text-color03: #1F2937;
+    --text-color02: #1F2937;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;	
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
 }
 
 i {
-    background-color: var(--background-color01);
+    color: var(--text-color02);
+    width: 20px;
 }
 
 img {
     max-width: 500px;
+    max-height: 350px;
 }
 
 .container {
     width: 100%;
+    height: 500px;
 }
+
+.container.hero {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    /* Background & Font-Styling */
+    background-color: var(--background-color01);
+    color: var(--text-color01);  
+    /* Margins, paddings, etc */
+    margin: 5px;
+    padding: 18px;
+    border: 0;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: var(--text-color02);
+}
+
