@@ -23,12 +23,19 @@ body {
 /* Headers */
 h1 {
     font-size: 48px;
-    font-weight: 900;	
+    font-weight: 900;
+    margin: 10px;	
 }
 
 h2 {
     font-size: 36px;
     font-weight: 900;
+}
+
+p.subtitle {
+    max-width: 500px;
+    margin: 10px;
+    padding: 10px;
 }
 
 i {
@@ -38,7 +45,7 @@ i {
 
 img {
     max-width: 500px;
-    max-height: 350px;
+    height: auto;
 }
 /* Divs and containers styling */
 .container {
