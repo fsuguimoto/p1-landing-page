@@ -142,7 +142,11 @@ footer {
 
 .container.subscribe {
     height: 300px;
-    ;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
 }
 
 .hero-text {
