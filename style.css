@@ -1,10 +1,10 @@
 /* overall styling */
 :root {
-    --background-color01: #1F2937;
-    --background-color02: #3882F6;
-    --background-color03: #E5E7EB;
-    --text-color01: #F9FAF8;
-    --text-color02: #1F2937;
+    --background-color01: #022707;
+    --background-color02: #04773B;
+    --background-color03: #F1F0EA;
+    --text-color01: #F1F0EA;
+    --text-color02: #022707;
 }
 
 * {
@@ -15,26 +15,40 @@
 html {
     min-height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
+
 body {
     /* Display */
     display: flex;
     flex-direction: column;    
 }
 
-/* List and links properties*/
+/* Menu and List and links properties*/
 
 a {
     text-decoration: none;
-    color: var(--text-color02);
+    color: var(--text-color01);
+    
 }
 
 a:hover {
     background-color: var(--background-color03);
+    color: var(--text-color02);
 }
 
+
 ul {
-    text-decoration: none;
+    list-style: none;
+    /*Display flex*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+}
+
+li {
+    margin: 6px;
     list-style: none;
 }
 
@@ -95,10 +109,18 @@ button {
 }
 
 /* Image */
-img {
+.img {
     max-width: 500px;
     height: auto;
 }
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
+
 /* Divs and containers styling */
 
 footer {
@@ -110,6 +132,21 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: small;
+}
+
+header {
+    /* Position */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Flex & alignment */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* Color & borders */
+    background-color: var(--background-color01);
+    border-bottom: 1px solid var(--background-color03);
 }
 
 .container:not(.subscribe) {
@@ -216,5 +253,5 @@ footer {
     font-size: 60px;
     color: var(--text-color02);
     margin: 6px;
+    z-index: -1;
 }
-
