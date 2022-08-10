@@ -57,6 +57,10 @@ p.subtitle {
     line-height: 1.5;
 }
 
+h3 {
+    margin-bottom: 5px;
+}
+
 .quote {
     font-size: 36px;
     font-style: italic;
@@ -82,6 +86,12 @@ button {
     background-color: var(--background-color02);
     color: var(--text-color01);
     font-size: 18px;
+}
+
+.box-button > .hero-button {
+    border: 1px solid var(--background-color03);
+    border-radius: 10px;
+    margin-right: 70px;
 }
 
 /* Image */
@@ -155,23 +165,25 @@ footer {
     /* Display & Alignment */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /* Font color & Background color */
     color: var(--text-color01);
     background-color: var(--background-color02);
      /* Width & height */
      height: 100px;
-     width: 65%;
+     width: 60%;
      /* Border, margin, etc */
      margin: 5px;
      border-radius: 10px;
 }
 
-.box {
+.subscribe-text {
     /* Display & Alignment */
     display: flex;
     flex-direction: column;
+    margin-left: 70px;
+    /* Display & Alignment */
 }
 
 .hero-text {
