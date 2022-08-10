@@ -75,6 +75,17 @@ h3 {
     margin-bottom: 5px;
 }
 
+.hero-text {
+    margin: 0;
+}
+
+.icon {
+    font-size: 60px;
+    color: var(--text-color02);
+    margin: 6px;
+    z-index: -1;
+}
+
 .quote {
     font-size: 36px;
     font-style: italic;
@@ -87,6 +98,16 @@ h3 {
     font-weight: 700;
     font-style: normal;
 }
+
+.subscribe-text {
+    /* Display & Alignment */
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    /* Display & Alignment */
+}
+
+
 
 /* Buttons */
 button {
@@ -166,7 +187,7 @@ header {
     border-bottom: 1px solid var(--background-color03);
 }
 
-.container:not(.subscribe, .container.quote) {
+.container:not(.subscribe) {
     min-width: 100%;
     min-height: 500px;
 }
@@ -201,7 +222,6 @@ header {
     /* Margins, paddings, etc */
     padding: 10px;
     width: 100%;
-    height: 350px;
     /* Background & Font-Styling */
     background-color: var(--background-color03);
     /* Display & Alignment */
@@ -238,17 +258,7 @@ header {
      border-radius: 10px;
 }
 
-.subscribe-text {
-    /* Display & Alignment */
-    display: flex;
-    flex-direction: column;
-    margin-left: 70px;
-    /* Display & Alignment */
-}
 
-.hero-text {
-    margin: 0;
-}
 
 /* Features, and child elements*/
 .main-title {
@@ -272,9 +282,3 @@ header {
     padding: 8px;    
 }
 
-.icon {
-    font-size: 60px;
-    color: var(--text-color02);
-    margin: 6px;
-    z-index: -1;
-}
