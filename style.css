@@ -1,3 +1,4 @@
+/* overall styling */
 :root {
     --background-color01: #1F2937;
     --background-color02: #3882F6;
@@ -141,27 +142,36 @@ footer {
 }
 
 .container.subscribe {
-    height: 300px;
-    /* Display & Alignment */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    height: 200px;
     /* margin, border, paddings, etc. */
     margin: 30px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-box {
+    /* Display & Alignment */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* Font color & Background color */
+    color: var(--text-color01);
+    background-color: var(--background-color02);
+     /* Width & height */
+     height: 100px;
+     width: 65%;
+     /* Border, margin, etc */
+     margin: 5px;
+     border-radius: 10px;
 }
 
 .box {
     /* Display & Alignment */
     display: flex;
     flex-direction: column;
-    /* Font color & Background color */
-    color: var(--text-color01);
-    background-color: var(--background-color02);
-    /* Width & height */
-    height: 100px;
-    width: 400px;
 }
 
 .hero-text {
