@@ -122,7 +122,7 @@ footer {
 }
 
 .container.info {
-    /* Display */
+    /* Display & Alignment */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -142,12 +142,26 @@ footer {
 
 .container.subscribe {
     height: 300px;
+    /* Display & Alignment */
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin, border, paddings, etc. */
+    margin: 30px;
+    padding: 10px;
 }
 
 .box {
-    
+    /* Display & Alignment */
+    display: flex;
+    flex-direction: column;
+    /* Font color & Background color */
+    color: var(--text-color01);
+    background-color: var(--background-color02);
+    /* Width & height */
+    height: 100px;
+    width: 400px;
 }
 
 .hero-text {
