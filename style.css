@@ -90,19 +90,28 @@ h3 {
 
 /* Buttons */
 button {
+    /* Width & Height */
     width: 150px;
     height: 40px;
+    /* Border, margin, etc */
     border: none;
+    /* Cursor */
+    cursor: pointer;
 }
 
+
 .hero-button {
+    /* Border, margin, etc */
     margin: 10px 20px;
+    /* Background */
     background-color: var(--background-color02);
+    /* Font styling */
     color: var(--text-color01);
     font-size: 18px;
 }
 
 .box-button > .hero-button {
+    /* Border, margin, etc */
     border: 1px solid var(--background-color03);
     border-radius: 10px;
     margin-right: 70px;
@@ -110,13 +119,16 @@ button {
 
 /* Image */
 .img {
+    /* Height and width */
     max-width: 500px;
     height: auto;
 }
 
 .logo {
+    /* Height and width */
     max-width: 150px;
     height: auto;
+    /* Border, margin, etc */
     margin-left: 20px;
 }
 
@@ -124,14 +136,19 @@ button {
 /* Divs and containers styling */
 
 footer {
+    /* Height & Width */
     height: 75px;
     width: 100%;
+    /* Background */
     background-color: var(--background-color01);
+    /* Font properties */
     color: var(--text-color01);
+    font-size: small;
+    /* Display */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: small;
+    
 }
 
 header {
@@ -151,7 +168,7 @@ header {
 
 .container:not(.subscribe) {
     min-width: 100%;
-    min-height: 450px;
+    min-height: 500px;
 }
 
 .container.hero {
@@ -164,9 +181,10 @@ header {
     background-color: var(--background-color01);
     color: var(--text-color01);
     /* Margins, paddings, etc */
-    padding: 30px;
+    padding: 10px;
     border: 0;
     margin: auto;
+    margin-top: 60px;
 }
 
 .container.info {
@@ -174,21 +192,26 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     /* Background & Font-Styling */
     color: var(--text-color02);
 }
 
 .container.quote {
+    /* Margins, paddings, etc */
     padding: 10px;
     width: 100%;
     height: 400px;
+    /* Background & Font-Styling */
     background-color: var(--background-color03);
+    /* Display & Alignment */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container.subscribe {
+    /* Height & Width */
     height: 200px;
     /* margin, border, paddings, etc. */
     margin: 30px;
